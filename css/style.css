@@ -1,4 +1,4 @@
-/* Reset */
+/* Estilos css boostrap */
 
 *{
     margin: 0;
@@ -6,357 +6,34 @@
     box-sizing: border-box;
 }
 
-/* Inicio grilla general */
-
-#grilla{
+body{
     width: 100vw;
     height: 100vh;
-    display: grid;
-    grid-template-rows: 0.3fr 1fr 0.5fr;
-    grid-template-columns: 0.5fr 1.5fr 1fr;
-    grid-template-areas: 
-    "header nav nav"
-    "main main main"
-    "footer footer footer";
 }
 
-header{
-    grid-area: header;
-    /* background-color: #27262D; */
+#header{
+    height: 15vh;
     background: linear-gradient(0deg, rgba(7,12,13,0.6502976190476191) 0%, rgba(1,0,13,1) 41%, rgba(71,71,71,1) 56%, rgba(1,2,20,1) 62%);
+    color: #ffff;
 }
 
-.logo{
-    padding: 22px 20px;
-    float: left;
-    font-size: 23px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #fff;
+.navbar-brand{
+    color: #ffff;
 }
 
-nav{
-    grid-area: nav;
-    background: linear-gradient(0deg, rgba(7,12,13,0.6502976190476191) 0%, rgba(1,0,13,1) 41%, rgba(71,71,71,1) 56%, rgba(1,2,20,1) 62%);
+.nav-link{
+    color: #ffff;
 }
 
-ul{
-    float: right;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
+#main{
+    height: 75vh;
 }
 
-ul li{
-    list-style: none;
-    font-size: 20px;
-    margin-left: 30px;
-    margin-top: 25px;
-}
-
-ul li a{
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin: 20px;
-}
-
-ul li a:hover{
-    border-bottom: 2px;
-    color: #6495ed;
-}
-
-main{
-    grid-area: main;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "sectionUno SectionDos";
-}
-
-#sectionUno{
-    grid-area: sectionUno;
-}
-
-#sectionDos{
-    grid-area: sectionDos;
-}
-
-footer{
-    grid-area: footer;
+#footer{
+    height: 10vh;
     background-color: #000;
-    color: #fff;
+    color: #ffff;
 }
 
-footer div{
-    display: flex;
-    justify-content: center;
-}
-
-/* Media querie mobile */
-
-@media screen and (min-width:320px) {
-    
-    /* Inicio */
-
-    #grilla{
-        grid-template-rows: 0.3fr 0.4fr 1.5fr 0.2fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "header"
-        "nav"
-        "main"
-        "footer";
-    }
-
-    header h2{
-        display: flex;
-        justify-content: center;
-    }
-
-    ul li{
-        font-size: 18px;
-        margin: 0;
-    }
-
-    main{
-        grid-template-rows: 0.5fr 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "sectionUno"
-        "sectionDos";
-    }
-
-    /* Sobre nosotros */
-
-    #Sn{
-        grid-template-rows: 0.2fr 1fr 1fr;
-        grid-template-columns: 0.8fr;
-        grid-template-areas: 
-        "secUno"
-        "secDos"
-        "secTres";
-    }
-
-    /* Productos */
-
-    #productos{
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "pan"
-        "facturas"
-        "tortas";
-    }
-
-    #pan #facturas #tortas{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 5px;
-    }
-
-    .imgProd{
-        width: 100vh;
-        height: 150px;
-    }
-
-    /* Pedidos */
-
-    #pedidos{
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "envios"
-        "eventos";
-    }
-
-    .h2Envios{
-        color: #000;
-    }
 
 
-    /* Contacto */
-
-    form{
-        background-color: rgba(0, 0, 0, 0.6);
-        width: 400px;
-        height: 500px;
-        margin: auto;
-        padding: 10px 20px;
-        box-sizing: border-box;
-        border-radius: 7px;
-    }
-
-    h2{
-        color: #fff;
-        text-align: center;
-        margin: 0;
-        margin-bottom: 20px;
-    }
-
-    input, textarea{
-        width: 100%;
-        margin-bottom: 20px;
-        padding: 7px;
-        box-sizing: border-box;
-        font-size: 17px;
-        border: none;
-    }
-
-    textarea{
-        min-height: 100px;
-        max-height: 300px;
-        max-width: 100%;
-    }
-    #contacto{
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "formulario"
-        "mapa";
-    }
-
-    
-}
-
-/* Media querie desktop */
-
-@media screen and (min-width: 1024px){
-
-    /* Inicio */
-
-    #grilla{
-        grid-template-rows: 0.3fr 1fr 0.4fr;
-        grid-template-columns: 0.5fr 1fr 1fr;
-        grid-template-areas: 
-        "header nav nav"
-        "main main main"
-        "footer footer footer";
-    }
-
-    ul li{
-        list-style: none;
-        font-size: 20px;
-        margin-left: 30px;
-        margin-top: 25px;
-    }
-
-    main{
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "sectionUno sectionDos";
-    }
-
-    .pInicio{
-        font-size: 20px;
-    }
-
-    /* Sobre nosostros */
-
-    #grilla{
-        grid-template-rows: 0.3fr 1fr 0.4fr;
-        grid-template-columns: 0.5fr 1fr 1fr;
-        grid-template-areas: 
-        "header nav nav"
-        "main main main"
-        "footer footer footer";
-    }
-
-    #Sn{
-        grid-template-rows: 0.3fr 1.5fr;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-        "secUno secUno"
-        "secDos secTres";
-    }
-
-    #secUno{
-        grid-area: secUno;
-    }
-
-    #secDos{
-        grid-area: secDos;
-    }
-
-    #secTres{
-        grid-area: secTres;
-    }
-
-/* Productos */
-
-    #productos{
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "pan"
-        "facturas"
-        "tortas";
-    }
-
-    .imgProd{
-        width: 300px;
-        height: 250px;
-        display: inline;
-    }
-
-    /* Contacto */
-    
-    #contacto{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        "formulario mapa";
-    }
-
-    form{
-        background-color: rgba(0, 0, 0, 0.6);
-        width: 400px;
-        height: 500px;
-        margin: auto;
-        padding: 10px 20px;
-        box-sizing: border-box;
-        border-radius: 7px;
-    }
-
-    h2{
-        color: #fff;
-        text-align: center;
-        margin: 0;
-        margin-bottom: 20px;
-    }
-
-    input, textarea{
-        width: 100%;
-        margin-bottom: 20px;
-        padding: 7px;
-        box-sizing: border-box;
-        font-size: 17px;
-        border: none;
-    }
-
-    textarea{
-        min-height: 100px;
-        max-height: 300px;
-        max-width: 100%;
-    }
-
-    /* Pedidos */
-
-    #pedidos{
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "envios eventos";
-    }
-
-    .h2Envios{
-        color: #000;
-    }
-
-
-}
