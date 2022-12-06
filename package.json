@@ -1,0 +1,27 @@
+{
+  "name": "pal-horno-santiago-delgado",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santiagodaniel95/Delgado_PalHorno.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/santiagodaniel95/Delgado_PalHorno/issues"
+  },
+  "homepage": "https://github.com/santiagodaniel95/Delgado_PalHorno#readme",
+  "devDependencies": {
+    "node": "^19.2.0",
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20",
+    "sass": "^1.56.1"
+  }
+}

@@ -1,35 +1,11 @@
-/* Estilos css boostrap */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+header {
+  background: linear-gradient(0deg, rgba(7, 12, 13, 0.650298) 0%, #01000d 41%, #474747 56%, #010214 62%); }
 
-body{
-    width: 100vw;
-    height: 100vh;
-}
-
-#header{
-    background: linear-gradient(0deg, rgba(7,12,13,0.6502976190476191) 0%, rgba(1,0,13,1) 41%, rgba(71,71,71,1) 56%, rgba(1,2,20,1) 62%);
-    color: #ffff;
-}
-
-.navbar-brand{
-    color: #ffff;
-}
-
-.nav-link{
-    color: #ffff;
-}
-
-
-
-#footer{
-    background-color: #000;
-    color: #ffff;
-}
-
-
-
+footer {
+  background-color: #000;
+  color: #fff; }
