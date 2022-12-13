@@ -9,40 +9,86 @@
     <title>Inicio</title>
 </head>
 <body>
-    <header class="container-fluid">
-        <div id="header" class="row">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="navbar-brand colorLogo">PAL HORNO</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon-white"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav ms-auto">
-                            <a class="nav-link"  href="./index.html">Inicio</a>
-                            <a class="nav-link" href="./pages/sobrenosotros.html">Nosotros</a>
-                            <a class="nav-link" href="./pages/productos.html">Productos</a>
-                            <a class="nav-link" href="./pages/pedidos.html">Pedidos</a>
-                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">PAL HORNO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/sobrenosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/pedidos.html">Pedidos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
 
     <main class="container-fluid">
         <div id="main" class="row">
-            <section class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 d-flex flex-column justify-content-center">
-            <h1 class="h1">¡Bienvenidos a Pal Horno!</h1>
-            <br>
-            <h2 class="h2"> Panaderia y pasteleria 100% artesanal</h2>
-            <br>
-            <p class="pInicio">Nuestra filosofía es simple: producción artesanal, los mejores ingredientes y, lo más importante, amor por lo que hacemos.</p>
+            <section id="sectionUno">
+                <div class="contenedor">
+                    <img class="imgUno" src="./img/background.jpg" alt="img">
+                    <div class="centrado">
+                        <h1 class="text-white text-uppercase">¡Bienvenidos a Pal Horno!</h1>
+                        <h4 class="text-white text-uppercase">Panaderia y pasteleria</h4>
+                        <h4 class="text-white text-uppercase">100% artesanal</h4>
+                    </div>
+                </div>
             </section>
-
-            <section class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 d-flex flex-column justify-content-center align-items-center">
-                <img src="./img/background.jpg" class="img-fluid h-100 w-100" alt="imagen">
+    
+            <section id="sectionDos">
+                <div>
+                    <img class="imgDos d-flex mx-auto" src="./img/temereceslomejor.svg">
+                </div>
+                <div>
+                    <h5 class="textDos text-center mx-auto">Nuestra filosofía es simple: producción artesanal, los mejores ingredientes y, lo más importante, <b>amor por lo que hacemos.</b></h5>
+                </div>
+                <div>
+                    <button class="btnPrincipal mx-auto">
+                        <a class="link1" href="./pages/sobrenosotros.html">Conocenos</a>
+                    </button>
+                </div>
+            </section>
+    
+            <section id="sectionTres">
+                <div class="row">
+                    <div class="col align-items-start">
+                        <h3 class="textProd d-flex mx-auto">Nuestros productos</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 text-center textTres">
+                        <h5>Panes y facturas</h5>
+                        <p class="text-center p">Nuestros artesanos mezclan la cantidad perfecta de ingredientes y hornean el pan usando la temperatura idónea del horno, obteniendo siempre como resultado único.</p>
+                        <!-- <button class="btnProd">
+                            <a class="link1" href="./pages/productos.html">Conocelos</a>
+                        </button> -->
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 text-center textTres">
+                        <h5>Pasteleria y reposteria</h5>
+                        <p class="text-center p">Nuestra pastelería artesanal se destaca en la preparación, cocción y decoración de platos y piezas dulces tales como tortas, pasteles, mini tortas y muchos más.</p>
+                        <!-- <button class="btnProd">
+                            <a class="link1" href="./pages/productos.html">Nuestras tortas y delicias</a>
+                        </button> -->
+                    </div>
+                </div>
+                <div class="link2 d-flex mx-auto">
+                    <a class="a" href="./pages/productos.html">Entra y conocé nuestra variedad de productos que tenemos</a>
+                </div>
             </section>
         </div>
         
@@ -51,10 +97,10 @@
     <footer id="footer" class="container-fluid">
         <div class="row">
             <div>
-                <h6 class="col-12 d-flex justify-content-center align-items-center">&#169 Pal Horno 2022</h6>
+                <h6 class="col-12 d-flex justify-content-center align-items-center text-white">&#169 Pal Horno 2022</h6>
             </div>
             <div>
-                <h6 class="col-12 d-flex justify-content-center align-items-center">Diseño Santiago Delgado</h6>
+                <h6 class="col-12 d-flex justify-content-center align-items-center text-white">Diseño Santiago Delgado</h6>
             </div>
         </div>
     </footer>
