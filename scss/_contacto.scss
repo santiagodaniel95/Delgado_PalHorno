@@ -1,0 +1,33 @@
+#contacto{
+    width: 100%;
+    height: 500px;
+    form{
+        background-color: rgba(0, 0, 0, 0.1);
+        width: 400px;
+        height: 500px;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        border-radius: 7px;
+        margin: auto;
+    }
+    .h3Contacto{
+        color: #fff;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    input, textarea{
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 7px;
+        box-sizing: border-box;
+        font-size: 17px;
+        border: none;
+        border-radius: 3px;
+    }
+    textarea{
+        min-height: 100px;
+        max-height: 300px;
+        max-width: 100%;
+    }
+}
